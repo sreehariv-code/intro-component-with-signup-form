@@ -1,7 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-d-blue: hsl(249, 10%, 26%);
+  --neutral-g-blue: hsl(246, 25%, 77%);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+/* 
+html,
+body {
+  height: 100vh;
+} */
+
+.container {
+  min-height: 100vh;
+  /* background: red; */
+  background: url("./images/bg-intro-mobile.png") var(--primary-red);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+.header {
+  color: #fff;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+.header h1 {
+  font-size: 2rem;
+  line-height: 2.3rem;
+}
+
+.desc {
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.desc p {
+  width: 32ch;
+}
+
+.form-section {
+  min-height: 400px;
+  width: 100%;
+  margin-top: 2.7rem;
+  /* background: blue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.offer-section {
+  background: var(--accent-blue);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 10px;
+  min-width: 345px;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.offer-section p {
+  text-align: center;
+  width: 21ch;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.offer-section p span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 1.4rem;
+  margin-right: 1.4rem;
+  /* align-self: center; */
+}
+
+.form form {
+  min-height: 500px;
+  min-width: 345px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 1.2rem 1.4rem;
+  border-radius: 10px;
+}
+
+.form form .input-section {
+  margin-bottom: 1rem;
+}
+
+.form form .input-section input {
+  padding: 0.5rem;
 }
