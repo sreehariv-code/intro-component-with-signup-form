@@ -15,7 +15,7 @@
   <style>
     footer {
       max-height: 200px;
-      background: red;
+      /* background: red; */
     }
 
     .attribution {
@@ -46,26 +46,42 @@
         <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
       </div>
       <div class="form">
-        <form action="!#">
-          <div class="input-section">
-            <input type="text" placeholder="First Name" class="f-name" />
+        <form action="!#" id="form">
+          <div class="input-container">
+            <div class="input-section">
+              <input type="text" placeholder="First Name" class="f-name" id="first_name" />
+              <img src="./images/icon-error.svg" alt="error" class="error-signal">
+            </div>
+            <div class="error-msg">First Name cannot be empty</div>
           </div>
-          <div class="input-section">
-            <input type="text" placeholder="Last Name" class="l-name" />
+          <div class="input-container">
+            <div class="input-section">
+              <input type="text" placeholder="Last Name" class="l-name" id="last_name" />
+              <img src="./images/icon-error.svg" alt="error" class="error-signal">
+            </div>
+            <div class="error-msg">Last Name cannot be empty</div>
           </div>
-          <div class="input-section">
-            <input type="email" placeholder="Email Address" class="email" />
+          <div class="input-container">
+            <div class="input-section">
+              <input type="text" placeholder="Email Address" class="email" id="email" />
+              <img src="./images/icon-error.svg" alt="error" class="error-signal">
+            </div>
+            <div class="error-msg" id="email-desc">Looks like this is not an email</div>
           </div>
-          <div class="input-section">
-            <input type="password" placeholder="Password" class="password" />
+          <div class="input-container">
+            <div class="input-section">
+              <input type="password" placeholder="Password" class="password" id="password" />
+              <img src="./images/icon-error.svg" alt="error" class="error-signal">
+            </div>
+            <div class="error-msg show">Password cannot be empty</div>
           </div>
           <button type="submit" class="submit-btn">
             claim your free trial
           </button>
           <div class="agree-state">
             <p>
-              By clicking the button, you are agreeing to our Terms and
-              Services
+              By clicking the button, you are agreeing to our <span>Terms and
+                Services</span>
             </p>
           </div>
         </form>
@@ -76,8 +92,9 @@
   <footer>
     <p class="attribution">
       Challenge by
-      <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
-      <a href="#">Your Name Here</a>.
+      <a rel="noopener" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded
+      with &hearts; by
+      <a href="https://github.com/sreehariv-code">Sreehari P V</a>.
     </p>
   </footer>
 </body>
